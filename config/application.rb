@@ -23,5 +23,8 @@ module Blog
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+
+    # Exclude JavaScript files from asset pipeline
+    config.assets.excluded_paths << Rails.root.join("app/assets/javascripts")
   end
 end
