@@ -65,3 +65,5 @@ group :test do
 end
 
 gem "jsbundling-rails"
+
+gem "redcarpet"
