@@ -1,9 +1,11 @@
-<h1>Posts</h1>
+<div class="max-w-3xl">
+  <h1 class="text-4xl font-bold mb-8 text-gray-900">Posts</h1>
 
-<ul>
-  <% @posts.each do |post| %>
-    <li>
-      <%= link_to post.title, post_path(post) %>
-    </li>
-  <% end %>
-</ul>
+  <ul class="space-y-4">
+    <% @posts.each do |post| %>
+      <li class="border-b border-gray-300 pb-4">
+        <%= link_to post.title, post_path(post), class: "text-xl text-primary-600 hover:text-primary-500 transition-colors font-medium" %>
+      </li>
+    <% end %>
+  </ul>
+</div>

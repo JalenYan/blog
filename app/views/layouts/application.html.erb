@@ -22,9 +22,9 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
+  <body class="bg-gray-50 text-gray-900 min-h-screen flex flex-col">
     <%= render "layouts/header" %>
-    <main class="container mx-auto mt-28 px-5 flex">
+    <main class="container mx-auto px-6 py-12 flex-1">
       <%= yield %>
     </main>
     <%= render "layouts/footer" %>
