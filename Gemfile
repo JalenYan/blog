@@ -64,6 +64,4 @@ group :test do
   gem "selenium-webdriver"
 end
 
-gem "jsbundling-rails"
-
 gem "redcarpet"
