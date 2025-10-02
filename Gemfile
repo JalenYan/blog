@@ -65,3 +65,5 @@ group :test do
 end
 
 gem "redcarpet"
+
+gem "madmin", "~> 2.1"
