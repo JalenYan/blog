@@ -74,7 +74,7 @@
 }
 
 .text-gray-700 table {
-  @apply w-full border-collapse mb-6 text-sm;
+  @apply w-full border-collapse mb-6 text-sm block overflow-x-auto;
 }
 
 .text-gray-700 thead {
@@ -82,11 +82,11 @@
 }
 
 .text-gray-700 th {
-  @apply border border-gray-300 px-4 py-3 text-left font-semibold text-gray-900;
+  @apply border border-gray-300 px-4 py-3 text-left font-semibold text-gray-900 whitespace-nowrap;
 }
 
 .text-gray-700 td {
-  @apply border border-gray-300 px-4 py-3;
+  @apply border border-gray-300 px-4 py-3 whitespace-nowrap;
 }
 
 .text-gray-700 tbody tr:nth-child(even) {
