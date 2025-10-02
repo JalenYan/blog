@@ -85,7 +85,7 @@ production:
     <<: *default
     database: blog_production
     username: blog
-    password: <%= ENV["RUNAPI_AI_DATABASE_PASSWORD"] %>
+    password: <%= ENV["POSTGRES_PASSWORD"] %>
   cache:
     <<: *primary_production
     database: blog_production_cache
