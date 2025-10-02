@@ -14,4 +14,5 @@ Rails.application.routes.draw do
   root "posts#index"
 
   get "posts/:slug", to: "posts#show", as: :post
+  get "about", to: "pages#about"
 end
