@@ -2,7 +2,7 @@
   <% @posts.each do |post| %>
     <li class="border-b border-gray-300 pb-6">
       <%= link_to post.title, post_path(post), class: "text-xl text-primary-600 hover:text-primary-500 transition-colors font-medium block mb-2" %>
-      <time class="text-sm text-gray-500"><%= post.published_at.strftime("%Y-%m-%d") %></time>
+      <time class="text-sm text-gray-500"><%= post.formatted_date %></time>
     </li>
   <% end %>
 </ul>

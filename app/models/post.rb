@@ -6,6 +6,10 @@ class Post < ApplicationRecord
 
   def to_param = slug
 
+  def formatted_date
+    published_at.strftime("%Y-%m-%d")
+  end
+
   private
 
   def ensure_slug
