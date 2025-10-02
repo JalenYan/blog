@@ -4,6 +4,6 @@ class PostsController < ApplicationController
   end
 
   def show
-    @post = Post.find_by!(slug: params.expect(:id))
+    @post = Post.find_by!(slug: params.expect(:slug))
   end
 end

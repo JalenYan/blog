@@ -4,8 +4,6 @@ class Post < ApplicationRecord
 
   before_validation :ensure_slug
 
-  def to_param = slug
-
   def formatted_date
     published_at.strftime("%Y-%m-%d")
   end
